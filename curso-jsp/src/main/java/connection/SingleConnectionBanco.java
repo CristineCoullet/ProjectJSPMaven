@@ -31,13 +31,13 @@ public class SingleConnectionBanco {
 		try {
 			
 			if(connection == null) {
-				Class.forName("org.postgresql.Driver"); /*Carrega o driver de conex�o do banco*/
+				Class.forName("org.postgresql.Driver"); /*Carrega o driver de conexão do banco*/
 				connection = DriverManager.getConnection(banco, user, senha);
 				connection.setAutoCommit(false); /*para nao efetuar alteracoes no banco sem nosso comando*/
 			}
 			
 		}catch (Exception e) {
-			e.printStackTrace();/*Mostrar qualquer erro no momento de conectar*/
+			e.printStackTrace();/*alteraçao dia 10/02/2024*/
 		}
 	}
 
